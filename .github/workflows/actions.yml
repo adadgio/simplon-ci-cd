@@ -1,9 +1,8 @@
-name: learn-github-actions
-#on: [push]
-on:
-  push: [ master ]
+name: simplon-ci-cd
+on: [ push ]
 jobs:
   test:
+    #name: Run tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -11,9 +10,16 @@ jobs:
       - run: npm install
       - run: npm test
   deploy:
-    runs-on: self-hosted
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-      - run: npm install
-      - run: npm run build --if-present
+    needs: [ test ]
+    #name: SSH and deploy node app
+    uses: appleboy/ssh-action@master
+    with:
+      host: ${{ secrets.SSH_HOST }}
+      username: ${{ secrets.SSH_USER }}
+      key: ${{ secrets.SSH_KEY }}
+      port: ${{ secrets.SSH_PORT }}
+      #script: |
+      #    cd ~/node-github-demo
+      #    git pull origin master
+      #    npm install --production
+      #    pm2 restart node-app
