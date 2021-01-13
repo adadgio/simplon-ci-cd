@@ -1,9 +1,19 @@
 name: learn-github-actions
-on: [push]
+#on: [push]
+on:
+  push: [ master ]
 jobs:
-  check-bats-version:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
       - run: npm install
+      - run: npm test
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: npm install
+      - run: npm run build --if-present
