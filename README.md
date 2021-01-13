@@ -6,6 +6,8 @@ https://chathula.dev/how-to-set-up-a-ci-cd-pipeline-for-a-node-js-app-with-githu
 
 ## First setup steps
 
+
+
 ssh root@46.101.88.57
 
 adduser deploybot
