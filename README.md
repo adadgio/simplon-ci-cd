@@ -11,7 +11,7 @@ Repository: git@github.com:user/myproject.git
 
 ## Setup steps
 
-### On your local machine
+### Step 0: On your local machine
 
 Create a SSh key for your local machine and git to access the server (call it id_rsa_deploybot)
 
@@ -21,18 +21,7 @@ ssh-keygen
 cat ~/.ssh/id_rsa_deploybot.pub
 ```
 
-### On the remote server step 1
-
-Creating a SSH key proper
-
-```
-ssh root@<HOST>46.101.88.57
-ssh-keygen
-cat ~/.ssh/id_rsa.pub
-# AND COPY IT IN GIHTUB Settings > Deploy keys
-```
-
-### On the remote server step 2
+### Step1: On the remote server step 2
 
 Note: ssh -i /Users/adadgio/.ssh/id_rsa_deploybot deploybot@46.101.88.57
 
@@ -44,10 +33,23 @@ su - deploybot
 cd 
 mkdir .ssh
 nano ~/.ssh/authorized_keys
-# copy paste key from cat
+# copy paste key from cat command in step 0
 
 sudo apt-get install git
 ```
+
+### Step 2: On the remote server step 1
+
+Creating a SSH key proper
+
+```
+ssh root@<HOST>46.101.88.57
+ssh-keygen
+cat ~/.ssh/id_rsa.pub
+# AND COPY IT IN GIHTUB Settings > Deploy keys
+```
+
+
 
 On github settings secrets, copy paste the *private key* (not the *.pub one!)
 

@@ -24,4 +24,5 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd ~
+            rm -rf ./simplon-ci-cd
             git clone -b master git@github.com:adadgio/simplon-ci-cd.git
