@@ -34,6 +34,7 @@ nano ~/.ssh/authorized_keys
 sudo apt-get install git
 ```
 
+On github settings secrets, copy paste the *private key* (not the *.pub one!)
 
 
 
