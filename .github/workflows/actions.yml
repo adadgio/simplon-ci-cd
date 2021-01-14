@@ -26,5 +26,9 @@ jobs:
             cd ~
             rm -rf ./simplon-ci-cd
             git clone -b master git@github.com:adadgio/simplon-ci-cd.git
-            cd simplon-ci-cd
-            npm install
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+          script: |
+            cd ./simplon-ci-cd
+            ls -la
