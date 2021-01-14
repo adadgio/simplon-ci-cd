@@ -3,6 +3,8 @@
 Base tutorial was here: 
 https://chathula.dev/how-to-set-up-a-ci-cd-pipeline-for-a-node-js-app-with-github-actions
 
+Repository: git@github.com:user/myproject.git
+
 ## SSH keys and how they work
 
 @Todo.
@@ -38,3 +40,5 @@ On github settings secrets, copy paste the *private key* (not the *.pub one!)
 
 
 
+
+uses: appleboy/scp-action@master
