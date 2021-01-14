@@ -21,7 +21,18 @@ ssh-keygen
 cat ~/.ssh/id_rsa_deploybot.pub
 ```
 
-### On the remote server
+### On the remote server step 1
+
+Creating a SSH key proper
+
+```
+ssh root@<HOST>46.101.88.57
+ssh-keygen
+cat ~/.ssh/id_rsa.pub
+# AND COPY IT IN GIHTUB Settings > Deploy keys
+```
+
+### On the remote server step 2
 
 Note: ssh -i /Users/adadgio/.ssh/id_rsa_deploybot deploybot@46.101.88.57
 
@@ -40,9 +51,3 @@ sudo apt-get install git
 
 On github settings secrets, copy paste the *private key* (not the *.pub one!)
 
-
-
-
-uses: appleboy/scp-action@master
-
-https://stackoverflow.com/questions/13363553/git-error-host-key-verification-failed-when-connecting-to-remote-repository
