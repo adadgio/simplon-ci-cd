@@ -2,7 +2,7 @@
 
 https://chathula.dev/how-to-set-up-a-ci-cd-pipeline-for-a-node-js-app-with-github-actions
 
-## Expliquer princiep des cles SSH en détails
+## Expliquer le principe des cles SSH en détails
 
 ## First setup steps
 
