@@ -23,6 +23,8 @@ cat ~/.ssh/id_rsa_deploybot.pub
 
 ### On the remote server
 
+Note: ssh -i /Users/adadgio/.ssh/id_rsa_deploybot deploybot@46.101.88.57
+
 ```
 ssh root@<HOST>46.101.88.57
 adduser deploybot
@@ -42,3 +44,5 @@ On github settings secrets, copy paste the *private key* (not the *.pub one!)
 
 
 uses: appleboy/scp-action@master
+
+https://stackoverflow.com/questions/13363553/git-error-host-key-verification-failed-when-connecting-to-remote-repository
