@@ -15,7 +15,13 @@ jobs:
     steps:
       - uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.SSH_PORT }}
+          host: 46.101.88.57
+          username: deploybot
+          key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJF8g3sQrqukQG+IVvfMu985ODRT7kUibFqjd+859/rP2dSW48iY+ob1HVnGJatUJHvja1zdRfJPdVMq4nOHMGlYZYfl0TS5kKQalmhG3tkb601Ay5Ud7CLcZAl9guc2BMlNvh3kfYUWPwxuYtOFu2mhRbDhCv+ms8olyS1UyyU7Nunn/9Fo1FS8/FaTDw9zSHpPShdt8OED5IIgsVnapIyQ+nHPs3OYNoYHd8IPGEJVgmsxrSJ488CK3U99Nm3Npqu+hWr9t3DfKBPlXI15wEgLzvZmyqIOFu5syTWYLVFQrtaOJFDiloQX6ZFlvvjxOSJs0Vti8KTYLmuJSvOhMl adadgio@macbook-pro-de-romain.home
+          port: 22
+          script: whoami
+          #host: ${{ secrets.SSH_HOST }}
+          #username: ${{ secrets.SSH_USER }}
+          #key: ${{ secrets.SSH_KEY }}
+          #port: ${{ secrets.SSH_PORT }}
+          #script: whoami
