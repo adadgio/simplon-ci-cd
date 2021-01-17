@@ -7,6 +7,8 @@ Repository: git@github.com:user/myproject.git
 
 ## SSH keys and how they work
 
+## Temporary IP: 
+
 @Todo.
 
 ## Setup steps
