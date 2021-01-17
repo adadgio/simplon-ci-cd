@@ -7,9 +7,13 @@ Repository: git@github.com:user/myproject.git
 
 ## SSH keys and how they work
 
-## Temporary IP: 
+@Todo
 
-@Todo.
+## Course sections
+
+Tools available (pro/cons)
+Security practices
+How SSH works
 
 ## Setup steps
 
