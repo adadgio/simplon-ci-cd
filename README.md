@@ -8,6 +8,7 @@ Repository: git@github.com:user/myproject.git
 ## SSH keys and how they work
 
 @Todo
+ssh -i /Users/adadgio/.ssh/id_rsa_deploybot deploybot@46.101.88.57
 
 ## Course sections
 
@@ -19,13 +20,15 @@ How SSH works
 
 ### Step 0: On your local machine
 
-Create a SSh key for your local machine and git to access the server (call it id_rsa_deploybot)
+Create a SSh key on/for your local machine and git to access the server (call it id_rsa_deploybot)
 
 ```
 cd ~
 ssh-keygen
 cat ~/.ssh/id_rsa_deploybot.pub
 ```
+
+Add that key to  /home/deployboy/.ssh/authorized_keys
 
 ### Step1: On the remote server step 2
 
