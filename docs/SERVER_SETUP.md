@@ -14,7 +14,12 @@ sudo apt-get update
 sudo apt-get install curl
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
+node -v
+npm -v
+npm install -g pm2
 ```
+
+Note: fix ERRACCESS permission on `npm install -g` command: [gist link here](https://gist.github.com/rafszul/6978ef2106992db0178bc4426b5e6f1c#:~:text=rafszul%2Ffix%2Dnpm%2Dpermissions.md&text=This%20indicates%20that%20you%20do,default%20directory%20to%20another%20directory)
 
 ## Install Git
 

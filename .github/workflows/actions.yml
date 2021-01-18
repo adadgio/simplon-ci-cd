@@ -29,7 +29,6 @@ jobs:
             git clone -b master git@github.com:adadgio/simplon-ci-cd.git
             cd ./simplon-ci-cd
             ls -la
-            npm install -g pm2
             npm install --production
             npm run start:prod
             
