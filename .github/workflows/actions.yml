@@ -30,5 +30,6 @@ jobs:
             cd ./simplon-ci-cd
             ls -la
             npm install --production
+            pm2 stop all && pm2 delete all
             pm2 start --name=SimplonCiCdApp pm2.yml
             
