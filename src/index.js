@@ -5,7 +5,7 @@ const restify = require('restify')
  */
 const server = restify.createServer()
 server.get("/", (req, res, next) => {
-    res.send(200, { result: "Ok" })
+    res.send(200, { result: "Ok, now this works !" })
     return next()
 })
 
