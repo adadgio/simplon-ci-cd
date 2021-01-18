@@ -62,3 +62,9 @@ cat ~/.ssh/id_rsa.pub
 
 On github settings secrets, copy paste the *private key* (not the *.pub one!)
 
+## Notes
+
+Ansible
+CircleCI
+Jenkins
+GitLab
