@@ -11,6 +11,7 @@ Follow: https://github.com/nodesource/distributions/blob/master/README.md#debins
 ```
 cd ~
 sudo apt-get update
+sudo apt-get install curl
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
