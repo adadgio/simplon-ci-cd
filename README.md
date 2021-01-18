@@ -34,7 +34,6 @@ Add that key to  /home/deployboy/.ssh/authorized_keys
 
 Note: ssh -i /Users/adadgio/.ssh/id_rsa_deploybot deploybot@46.101.88.57
 
-
 ```
 ssh root@<HOST>46.101.88.57
 adduser deploybot
