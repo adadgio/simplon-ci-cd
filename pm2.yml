@@ -1,0 +1,12 @@
+apps:
+  - script: ./src/index.js
+    name: "SimplonCiCdApp"
+    watch: true
+    instances: 2
+    exec_mode: cluster
+    env:
+      NODE_ENV: production
+    #env:
+    #  NODE_ENV: development
+    #env_production: 
+    #  NODE_ENV: production
